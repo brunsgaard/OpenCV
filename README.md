@@ -1,4 +1,4 @@
-## The problem
+## The problem we encountered
 
 Our software was throwing the exception 
 ```
