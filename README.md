@@ -4,7 +4,7 @@ Our software was throwing the exception
 ```
 Unable to load DLL 'OpenCvSharpExtern': The specified module could not be found.
 ```
-when executed in Windows container.
+when executed in a Windows container.
 
 
 ## Running OpenCVSharp in a Windows container 
