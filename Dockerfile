@@ -8,7 +8,7 @@ RUN powershell Expand-Archive system32_opencvsharp_deps.zip C:/Windows/System32
 RUN powershell Remove-Item system32_opencvsharp_deps.zip
 
 # Add binary to image
-ADD ./bin/Debug/net471/win10-x64 .
+ADD ./bin/Debug/net471 .
 
 CMD ["Example.exe"]
 
