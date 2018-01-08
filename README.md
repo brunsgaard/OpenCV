@@ -1,3 +1,12 @@
+## The problem
+
+Our software was throwing the exception 
+```
+Unable to load DLL 'OpenCvSharpExtern': The specified module could not be found.
+```
+when executed in Windows container.
+
+
 ## Running OpenCVSharp in a Windows container 
 
 This is an example running OpenCVSharp in a Windows container with `microsoft/dotnet-framework:4.7.1-windowsservercore-1709` as base image.
@@ -68,7 +77,7 @@ Step 7/7 : CMD Example.exe
 Successfully built 13bd4722c4fe
 Successfully tagged opencvsharp-docker-example:latest
 
-PS C:\Users\brunsgaard\foobar\OpenCVSharp-docker-example> docker run opencvsharp-docker-example
+PS C:\Users\brunsgaard\OpenCVSharp-docker-example> docker run opencvsharp-docker-example
 Hello World!
 ```
 
