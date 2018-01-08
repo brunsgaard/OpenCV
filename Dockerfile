@@ -11,4 +11,3 @@ RUN powershell Remove-Item system32_opencvsharp_deps.zip
 ADD ./bin/Debug/net471 .
 
 CMD ["Example.exe"]
-
