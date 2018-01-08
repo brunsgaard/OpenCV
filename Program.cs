@@ -1,15 +1,15 @@
 using System;
 using OpenCvSharp;
 
-namespace foo
+namespace Example
 {
     class Program
     {
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            var mat = new Mat(100, 100, MatType.CV_8UC1, new Scalar(0));
-	    Console.ReadLine();
+            new Mat(100, 100, MatType.CV_8UC1, new Scalar(0));
         }
     }
 }
+

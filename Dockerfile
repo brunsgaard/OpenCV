@@ -1,6 +1,14 @@
 FROM microsoft/dotnet-framework:4.7.1-windowsservercore-1709
 
-ADD bin/Release/net462/ /app
 WORKDIR /app
 
-ENTRYPOINT ["cmd.exe", "/k"]
+# Install dll files needed by OpenCvSharp
+ADD system32_opencvsharp_deps.zip .
+RUN powershell Expand-Archive system32_opencvsharp_deps.zip C:/Windows/System32
+RUN powershell Remove-Item system32_opencvsharp_deps.zip
+
+# Add binary to image
+ADD ./bin/Debug/net471/win10-x64 .
+
+CMD ["Example.exe"]
+
