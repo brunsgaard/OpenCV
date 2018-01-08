@@ -39,8 +39,10 @@ Build succeeded.
     0 Error(s)
 
 Time Elapsed 00:00:00.58
+
 PS C:\Users\brunsgaard\OpenCVSharp-docker-example> dotnet run
 Hello World!
+
 PS C:\Users\brunsgaard\OpenCVSharp-docker-example> docker build -t opencvsharp-docker-example .
 Sending build context to Docker daemon  118.5MB
 Step 1/7 : FROM microsoft/dotnet-framework:4.7.1-windowsservercore-1709
@@ -65,6 +67,7 @@ Step 7/7 : CMD Example.exe
  ---> 13bd4722c4fe
 Successfully built 13bd4722c4fe
 Successfully tagged opencvsharp-docker-example:latest
+
 PS C:\Users\brunsgaard\foobar\OpenCVSharp-docker-example> docker run opencvsharp-docker-example
 Hello World!
 ```
